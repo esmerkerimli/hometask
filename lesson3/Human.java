@@ -6,6 +6,7 @@ public class Human {
     Pet pet;
     Human mother;
     Human father;
+    String[][] schedule;
 
     public Human() {}
 
@@ -39,6 +40,23 @@ public class Human {
                 System.out.println("I have a " + pet.species + " that is " + pet.age + " years old, he is very sly.");
             } else {
                 System.out.println("I have a " + pet.species + " that is " + pet.age + " years old, he is almost not sly.");
+            }
+        }
+    }
+
+    public boolean feedPet(boolean isItTimeForFeeding) {
+        if (isItTimeForFeeding) {
+            System.out.println("Hm... I will feed " + name + "'s " + pet.species);
+            return true;
+        } else {
+            Random random = new Random();
+            int randomNumber = random.nextInt(101);
+            if (pet.trickLevel > randomNumber) {
+                System.out.println("Hm... I will feed " + name + "'s " + pet.species);
+                return true;
+            } else {
+                System.out.println("I think " + name + "'s " + pet.species + " is not hungry.");
+                return false;
             }
         }
     }
