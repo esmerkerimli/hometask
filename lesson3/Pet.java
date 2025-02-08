@@ -1,11 +1,11 @@
 import java.util.Arrays;
 
 public class Pet{
-    public String species;
-    public String nickname;
-    public int age;
-    public int trickLevel;
-    public String[] habits;
+    String species;
+    String nickname;
+    int age;
+    int trickLevel;
+    String[] habits;
     public Pet() {
     }
 
