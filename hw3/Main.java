@@ -28,7 +28,7 @@ public class Main {
         child1.setSchedule(schedule);
 
         for (int i = 0; i < 10000; i++) {
-            new Human("Test" + i, "User" + i, 2000 + i % 20);
+            new Human("TestName" + i, "TestSurname" + i, 2000 + i % 20);
         }
 
         System.gc();
