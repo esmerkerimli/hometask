@@ -18,7 +18,7 @@ public class Family {
     }
 
     public void addChild(Human child) {
-        Human[] newChildren = Arrays.copyOf(children, size + 1); // Create a new array with size + 1
+        Human[] newChildren = Arrays.copyOf(children, size + 1);
         newChildren[size] = child;
         children = newChildren;
         size++;
@@ -29,8 +29,8 @@ public class Family {
         for (int i = 0; i < size; i++) {
             if (children[i].equals(child)) {
                 Human[] newChildren = new Human[size - 1];
-                System.arraycopy(children, 0, newChildren, 0, i); // Copy up to the child
-                System.arraycopy(children, i + 1, newChildren, i, size - i - 1); // Copy after the child
+                System.arraycopy(children, 0, newChildren, 0, i); 
+                System.arraycopy(children, i + 1, newChildren, i, size - i - 1); 
                 children = newChildren;
                 size--;
                 return true;
@@ -42,8 +42,8 @@ public class Family {
     public boolean deleteChild(int index) {
         if (index >= 0 && index < size) {
             Human[] newChildren = new Human[size - 1];
-            System.arraycopy(children, 0, newChildren, 0, index); // Copy up to the index
-            System.arraycopy(children, index + 1, newChildren, index, size - index - 1); // Copy after the index
+            System.arraycopy(children, 0, newChildren, 0, index); 
+            System.arraycopy(children, index + 1, newChildren, index, size - index - 1); 
             children = newChildren;
             size--;
             return true;
