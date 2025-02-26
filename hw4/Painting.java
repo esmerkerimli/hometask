@@ -1,6 +1,6 @@
 class Painting extends Art {
-    public Painting(String medium) {
-        super(medium);
+    public Painting(String tool) {
+        super(tool);
     }
 
     //overriding abstract method
