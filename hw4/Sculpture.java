@@ -1,6 +1,6 @@
 class Sculpture extends Art {
-    public Sculpture(String material) {
-        super(material);
+    public Sculpture(String tool) {
+        super(tool);
     }
 
     //overriding abstract method
