@@ -15,7 +15,7 @@ public class Family implements HumanCreator {
     public Human bornChild() {
         Random random = new Random();
         boolean isMale = random.nextBoolean();
-        String childName = (isMale ? "John" : "Jane"); // Example random name, could be enhanced with a list
+        String childName = (isMale ? "Akif" : "Ayan"); 
         int averageIq = (father.iq + mother.iq) / 2;
         return isMale ? new Man(childName, familyName, averageIq) : new Woman(childName, familyName, averageIq);
     }
