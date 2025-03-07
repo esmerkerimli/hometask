@@ -5,6 +5,6 @@ public class RoboCat extends Pet {
 
         @Override
         public void respond() {
-            System.out.println("The robot cat makes mechanical sounds.");
+            System.out.println("Beep boop! I am RoboCat.");
         }
     }
