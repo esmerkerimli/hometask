@@ -5,11 +5,11 @@ public class Man extends Human {
 
     @Override
     public void greetPet() {
-        System.out.println("Hello, pet! I'm your master.");
+        System.out.println("Hey there, buddy! Ready to play?");
     }
 
     @Override
     public void uniqueMethod() {
-        System.out.println("I repair cars.");
+        System.out.println("I enjoy playing the piano.");
     }
 }
