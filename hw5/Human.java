@@ -1,3 +1,7 @@
+import java.util.Random;
+import java.util.Scanner;
+import java.util.Arrays;
+
 public abstract class Human {
     protected String name;
     protected String familyName;
