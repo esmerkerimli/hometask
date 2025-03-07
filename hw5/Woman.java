@@ -5,11 +5,11 @@ public class Woman extends Human {
 
     @Override
     public void greetPet() {
-        System.out.println("Hi, pet! I'm your lovely owner.");
+        System.out.println("Hi, pet! I'm your owner.");
     }
 
     @Override
     public void uniqueMethod() {
-        System.out.println("I love makeup.");
+        System.out.println("I enjoy dressing up.");
     }
 }
