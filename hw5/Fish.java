@@ -6,6 +6,6 @@ public class Fish extends Pet {
 
     @Override
     public void respond() {
-        System.out.println("The fish swishes its tail.");
+        System.out.println("The fish goes blub blub.");
     }
 }
