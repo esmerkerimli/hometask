@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
-interface NumberChecker {
+interface PerformOperation {
     boolean test(int number);
 }
 
 class NumberUtils {
-    public static NumberChecker isOdd() {
+    public static PerformOperation isOdd() {
         return num -> num % 2 != 0;
     }
 
-    public static NumberChecker isPrime() {
+    public static PerformOperation isPrime() {
         return num -> {
             if (num <= 1) return false;
             for (int i = 2; i * i <= num; i++) {
@@ -19,7 +19,7 @@ class NumberUtils {
         };
     }
 
-    public static NumberChecker isPalindrome() {
+    public static PerformOperation isPalindrome() {
         return num -> {
             int original = num, reversed = 0;
             while (num > 0) {
@@ -34,9 +34,9 @@ class NumberUtils {
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int testCases = scanner.nextInt();
+        int T = scanner.nextInt();
 
-        for (int i = 0; i < testCases; i++) {
+        for (int i = 0; i < T; i++) {
             int option = scanner.nextInt();
             int value = scanner.nextInt();
 
